@@ -1,0 +1,275 @@
+<resources>
+    <string name="exawallet">ExaWallet</string>
+    <string name="exawallet_stagenet">ExaWallet [Stagenet]</string>
+    <string name="exa">Exa</string>
+
+    <string name="title_wallets">Wallets</string>
+    <string name="title_wallets_stagenet">Wallets [Stagenet]</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_send">Send</string>
+    <string name="title_receive">Receive</string>
+    <string name="title_balance">Balance</string>
+    <string name="title_exchange_rates">Exchange rates</string>
+    <string name="title_manage">Manage</string>
+    <string name="title_notifications">Notifications</string>
+
+    <string name="prompt_wallet_name_create">Wallet name</string>
+    <string name="prompt_password">Password</string>
+    <string name="prompt_mnemonic_password">Mnemonic password (optional)</string>
+    <string name="prompt_wallet_password">Wallet password</string>
+    <string name="prompt_confirm_wallet_password">Wallet password confirmation</string>
+    <string name="prompt_remote_node">Node</string>
+    <string name="prompt_amount">Amount</string>
+    <string name="prompt_address">Address</string>
+
+    <string name="action_login">Login</string>
+    <string name="action_restore">Restore</string>
+    <string name="action_receive">Receive</string>
+    <string name="action_continue">Continue</string>
+    <string name="action_skip_confirm">Skip confirm</string>
+    <string name="action_skip_wallet_password">Skip wallet password</string>
+    <string name="action_save_changes">Save changes</string>
+    <string name="action_create_personal_wallet">Create personal wallet</string>
+    <string name="action_create_shared_wallet">Create shared wallet</string>
+    <string name="action_join_shared_wallet">Join shared wallet</string>
+    <string name="action_delete_wallet">Delete wallet</string>
+    <string name="action_edit_wallet">Edit wallet</string>
+    <string name="action_setup_pin">Setup PIN</string>
+    <string name="action_set_wallet_password">Set Wallet Password</string>
+    <string name="action_restore_wallet">Restore Wallet</string>
+    <string name="action_mnemonic">Wallet passphrase</string>
+    <string name="action_invite_code">Invite code</string>
+    <string name="action_transaction">Transaction</string>
+    <string name="action_txproposals">Proposals</string>
+    <string name="action_private_login_key">Enter mnemonic phrase</string>
+    <string name="action_manage">Manage application</string>
+    <string name="action_manage_wallet">Manage wallet</string>
+    <string name="action_send">Send</string>
+    <string name="action_goto_blockchain">Go to blockchain</string>
+    <string name="action_new_wallet">Create new wallet</string>
+    <string name="action_select_action">Select action</string>
+    <string name="action_remind_mnemonic">Remind mnemonic</string>
+    <string name="action_change_mode">Change mode</string>
+    <string name="action_about">About Exa wallet</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_remind_invite_code">Remind invite code</string>
+    <string name="action_approve">approve</string>
+    <string name="action_reject">Reject</string>
+    <string name="action_change_password">Change password</string>
+    <string name="action_insert_invite_code">Insert invite code</string>
+    <string name="action_send_invite_code">Send invite code</string>
+
+    <string name="no_txproposals_info">You have no proposals</string>
+    <string name="no_transactions_info">You have no transactions</string>
+    <string name="no_wallets_info">You have no wallets</string>
+    <string name="future_transactions_info">Your future transactions\nwill be shown here</string>
+    <string name="wallet_clipboard">Wallet address has been copied to clipboard</string>
+    <string name="invite_code_clipboard">Invite code has been copied to clipboard</string>
+    <string name="address_clipboard">Address has been copied to clipboard</string>
+    <string name="txhash_clipboard">Transaction hash has been copied to clipboard</string>
+    <string name="payment_id_clipboard">Payment id has been copied to clipboard</string>
+    <string name="wallet">Wallet</string>
+    <string name="fee">Fee:</string>
+    <string name="fee_level">Fee level</string>
+    <string name="to">To</string>
+    <string name="from">From</string>
+    <string name="status">Status</string>
+
+    <string name="usd_symbol">$</string>
+    <string name="eur_symbol">€</string>
+
+    <string name="declined">Declined</string>
+    <string name="confirmed">Confirmed</string>
+    <string name="processing">Processing</string>
+
+    <string name="network">Blockchain network</string>
+    <string name="privacy">Privacy level</string>
+    <string name="currency">Balance currency</string>
+    <string name="send_to">Successfully sent to</string>
+    <string name="password_weak">The password is too weak</string>
+    <string name="enter_wallet_password">Enter Wallet Password</string>
+
+    <string name="share_invite_code">Share this code with your wallet members</string>
+
+    <string name="ok">Ok</string>
+    <string name="close">Close</string>
+    <string name="cancel">Cancel</string>
+    <string name="error">Error</string>
+    <string name="warning">Warning</string>
+    <string name="skip">Skip</string>
+
+    <string name="delete_wallet_notify">Do you really want to delete this wallet?</string>
+    <string name="enter_pin">Enter security code</string>
+    <string name="create_pin">Create security code</string>
+    <string name="change_pin">Change security code</string>
+    <string name="confirm_pin">Confirm security code</string>
+
+    <string name="message_wallet_created">Wallet succesfully created</string>
+    <string name="message_wallet_restored">Wallet succesfully restored</string>
+    <string name="urgent">Urgent</string>
+    <string name="standard">Standard</string>
+    <string name="low">Low</string>
+    <string name="version">Version</string>
+    <string name="link">Link</string>
+
+    <string name="language">Language</string>
+    <string name="english">English</string>
+    <string name="english_old">English old</string>
+    <string name="french">French</string>
+    <string name="spanish">Spanish</string>
+    <string name="italian">Italian</string>
+    <string name="dutch">Dutch</string>
+    <string name="esperanto">Esperanto</string>
+    <string name="czech">Czech</string>
+    <string name="russian">Russian</string>
+    <string name="ukrainian">Ukrainian</string>
+    <string name="indonesian">Indonesian</string>
+    <string name="japanese">Japanese</string>
+    <string name="german">German</string>
+    <string name="chinese_simplified">Chinese simplified</string>
+    <string name="lojban">Lojban</string>
+    <string name="portuguese">Portuguese</string>
+    <string name="korean">Korean</string>
+    <string name="chinese_sim">Chinese simplified</string>
+    <string name="chinese_tr">Chinese Traditiona</string>
+
+    <string name="mnemonic_length">Mnemonic length</string>
+    <string name="txhash">TxHash</string>
+    <string name="no_internet_connection">No internet connection</string>
+    <string name="actual_fee">Actual fee</string>
+    <string name="gwei_name">GWei</string>
+    <string name="waiting">Waiting %d seconds…</string>
+    <string name="wallet_fulfilled">The wallet is already fulfilled</string>
+
+    <string name="follow_twitter">Follow us on Twitter\n@stasisnet</string>
+    <string name="build_number">1.0.1</string>
+    <string name="save_mnemonic">Save the mnemonic</string>
+    <string name="invalid_mnemonc">Invalid mnemonic. Try again or exit</string>
+    <string name="txProposals">Active proposals</string>
+    <string name="transactions">Transactions history</string>
+    <string name="personal_wallet">Personal wallet</string>
+    <string name="shared_wallet">Shared wallet</string>
+    <string name="prompt_block_height">Enter the height of block (optional)</string>
+    <string name="insert_words">Intsert words</string>
+    <string name="key_confirmed">Key has been confirmed</string>
+    <string name="invalid_address_error">Invalid recipient address</string>
+    <string name="invalid_amount_error">Invalid amount</string>
+    <string name="prompt_payment_id">Payment id (optional)</string>
+    <string name="prompt_payment_note">Payment note (required)</string>
+    <string name="prompt_payment_note_optional">Payment note (optional)</string>
+    <string name="invalid_payment_id_error">Invalid payment id</string>
+    <string name="note">Note</string>
+    <string name="when">When</string>
+    <string name="confirmations">Confirmations</string>
+    <string name="approvals">Approvals</string>
+    <string name="rejects">Rejects</string>
+    <string name="payment_id">Payment id</string>
+    <string name="invalid_mnemonic_length">Invalid mnemonic length</string>
+    <string name="unknow_mnemonic_language">Unknow mnemonic language</string>
+    <string name="success">Success</string>
+    <string name="invalid_block_height">Invalid block height</string>
+    <string name="default_node_prod"> monero.exan.tech:18081</string>
+    <string name="default_node_stage">monero-stagenet.exan.tech:38081</string>
+    <string name="default_node_stage1">fastsync-node-stage.exan.tech:38081</string>
+    <string name="generate">Generate</string>
+    <string name="signatures_need">Signatures need</string>
+    <string name="total_members">Total members</string>
+    <string name="insert_invite_code">Insert or scan invite code</string>
+    <string name="sync_complete">Synchronization complete</string>
+    <string name="remaining_blocks">%d blocks remaining</string>
+    <string name="blockchain_synchronization">blockchain synchronization...</string>
+    <string name="approvals_from">Approved %d from %d</string>
+    <string name="rejects_from">Rejects %d from %d</string>
+    <string name="mnemonic_language">Mnemonic language</string>
+    <string name="wallet_not_synс">Wallet is not synchronized</string>
+    <string name="sync">Start sync</string>
+    <string name="invalid_transaction_description">Invalid transaction description</string>
+    <string name="participants_progress">Participants joined %d of %d</string>
+    <string name="action_rescan">Rescan blockchain</string>
+    <string name="delete_proposal">Delete proposal</string>
+    <string name="ignore">Ignore</string>
+    <string name="action_set_shared">Set shared</string>
+    <string name="action_set_personal">Set personal</string>
+    <string name="action_spy_protection">Spy protection</string>
+    <string name="action_drop_imported">Drop imported</string>
+    <string name="internal_server_error">Internal server error</string>
+    <string name="ticker">Ticker</string>
+    <string name="period">Period</string>
+    <string name="notify_mnemonic">Write the passphrase and store it somewhere safe. This is the only way to restore access to your wallet</string>
+    <string name="wallets_one_device">You can’t join the same wallet on the same device twice</string>
+    <string name="skip_mnemonic_notify">We recommend you to write down your recovery phrase and store it securely before retrieving the wallet’s address. It will let you to recover the wallet in case of some fault or if your device is lost or stolen.</string>
+    <string name="skip_wallet_password_notify">Setting password generally increases security: if you do not set the password, someone with an access to your device can use your wallet</string>
+    <string name="no_sync_wallet_notify">Each and every of your co-payers should appear online at least once before you can create the next spending proposal</string>
+    <string name="keep_mnemonic">Keep your passphrase in a safe place. Please note that your funds can not be restored without the passphrase</string>
+    <string name="skip_blockheight_notify">We strongly recommend you to set the creation date or height of the blockchain at the time of wallet creation, if you remember it. It will significantly speed up the initial sync process</string>
+    <string name="skip_blockheight">Set the block height</string>
+
+    <string-array name="network_list">
+        <item>Main net</item>
+    </string-array>
+
+    <string-array name="privacy_list">
+        <item>Lite</item>
+        <item>Above lite</item>
+        <item>Below medium</item>
+        <item>Medium</item>
+        <item>Above medium</item>
+        <item>Below standard</item>
+        <item>Standard</item>
+        <item>Above standard</item>
+        <item>Paranoid</item>
+    </string-array>
+
+    <string-array name="currency_list">
+        <item>@string/usd_symbol</item>
+        <item>@string/eur_symbol</item>
+    </string-array>
+
+    <string-array name="fee_level_list">
+        <item>@string/low</item>
+        <item>@string/standard</item>
+        <item>@string/urgent</item>
+    </string-array>
+
+    <string-array name="mnemonic_length_list">
+        <item>12</item>
+        <item>15</item>
+        <item>18</item>
+        <item>21</item>
+        <item>24</item>
+    </string-array>
+
+    <string-array name="signers">
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+    </string-array>
+
+    <string-array name="participants">
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+    </string-array>
+
+    <string-array name="languages">
+        <item>@string/english</item>
+        <item>@string/french</item>
+        <item>@string/spanish</item>
+        <item>@string/italian</item>
+        <item>@string/dutch</item>
+        <item>@string/russian</item>
+        <item>@string/english_old</item>
+        <item>@string/esperanto</item>
+        <item>@string/japanese</item>
+        <item>@string/german</item>
+        <item>@string/chinese_simplified</item>
+        <item>@string/lojban</item>
+        <item>@string/portuguese</item>
+    </string-array>
+</resources>

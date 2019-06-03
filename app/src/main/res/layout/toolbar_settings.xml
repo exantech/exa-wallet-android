@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/toolbar"
+        app:theme="@style/ToolBarStyle"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size110">
+    <View android:id="@+id/toolbar_button"
+          android:layout_width="@dimen/size63"
+          android:layout_height="@dimen/size63"
+          android:layout_gravity="end"
+          android:layout_marginEnd="@dimen/size40"
+          android:background="@drawable/ic_settings_white"/>
+</android.support.v7.widget.Toolbar>

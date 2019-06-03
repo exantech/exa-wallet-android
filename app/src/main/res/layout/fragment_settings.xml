@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/shadow">
+    <include layout="@layout/toolbar"
+             app:layout_scrollFlags="scroll|enterAlways"/>
+
+    <FrameLayout android:id="@+id/setup_pin"
+                 android:layout_width="match_parent"
+                 android:layout_marginTop="@dimen/size110"
+                 android:background="@color/white"
+                 android:layout_height="@dimen/size160">
+
+        <View android:layout_width="@dimen/size80"
+              android:layout_height="@dimen/size80"
+              android:layout_marginStart="@dimen/size40"
+              android:layout_gravity="center_vertical|start"
+              android:background="@drawable/ic_setup"/>
+
+        <com.devspark.robototextview.widget.RobotoTextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                style="@style/SingleBlackText"
+                android:layout_gravity="center_vertical|start"
+                android:layout_marginStart="@dimen/size160"
+                android:text="@string/action_setup_pin"/>
+    </FrameLayout>
+
+    <FrameLayout android:id="@+id/spy_protection"
+                 android:layout_width="match_parent"
+                 android:layout_below="@+id/setup_pin"
+                 android:background="@color/white"
+                 android:layout_height="@dimen/size160">
+
+        <View android:layout_width="@dimen/size80"
+              android:layout_height="@dimen/size80"
+              android:layout_marginStart="@dimen/size40"
+              android:layout_gravity="center_vertical|start"
+              android:background="@drawable/ic_change_password"/>
+
+        <com.devspark.robototextview.widget.RobotoTextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                style="@style/SingleBlackText"
+                android:layout_gravity="center_vertical|start"
+                android:layout_marginStart="@dimen/size160"
+                android:text="@string/action_spy_protection"/>
+
+        <com.devspark.robototextview.widget.RobotoCheckBox
+                android:id="@+id/spy_protection_check_box"
+                android:layout_gravity="center_vertical|end"
+                android:layout_marginEnd="@dimen/size40"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+    </FrameLayout>
+
+    <FrameLayout android:id="@+id/about"
+                 android:layout_width="match_parent"
+                 android:layout_below="@+id/spy_protection"
+                 android:layout_marginTop="@dimen/size40"
+                 android:background="@color/white"
+                 android:layout_height="@dimen/size160">
+
+        <View android:layout_width="@dimen/size80"
+              android:layout_height="@dimen/size80"
+              android:layout_marginStart="@dimen/size40"
+              android:layout_gravity="center_vertical|start"
+              android:background="@drawable/ic_about"/>
+
+        <com.devspark.robototextview.widget.RobotoTextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                style="@style/SingleBlackText"
+                android:layout_gravity="center_vertical|start"
+                android:layout_marginStart="@dimen/size160"
+                android:text="@string/action_about"/>
+    </FrameLayout>
+</RelativeLayout>

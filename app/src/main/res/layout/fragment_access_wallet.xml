@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/black"
+              android:orientation="vertical">
+
+    <include layout="@layout/toolbar"
+             app:layout_scrollFlags="scroll|enterAlways"/>
+
+
+    <RelativeLayout android:id="@+id/create_private_wallet_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/size250">
+        <View android:layout_width="@dimen/size40"
+              android:layout_height="@dimen/size25"
+              android:background="@drawable/ic_personal_wallet_orange"
+              android:layout_centerVertical="true"
+              android:layout_marginStart="@dimen/size125"/>
+        <com.devspark.robototextview.widget.RobotoTextView
+                style="@style/ButtonTextLabel"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginStart="@dimen/size280"
+                android:layout_marginEnd="@dimen/size140"
+                android:text="@string/action_create_personal_wallet"/>
+    </RelativeLayout>
+
+    <RelativeLayout android:id="@+id/create_multisig_wallet_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/size250">
+        <View android:layout_width="@dimen/size63"
+              android:layout_height="@dimen/size25"
+              android:background="@drawable/ic_multisig_wallet_orange"
+              android:layout_centerVertical="true"
+              android:layout_marginStart="@dimen/size110"/>
+        <com.devspark.robototextview.widget.RobotoTextView
+                style="@style/ButtonTextLabel"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginStart="@dimen/size280"
+                android:layout_marginEnd="@dimen/size140"
+                android:text="@string/action_create_shared_wallet"/>
+    </RelativeLayout>
+
+    <RelativeLayout android:id="@+id/join_multisig_wallet_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/size250">
+        <View android:layout_width="@dimen/size110"
+              android:layout_height="@dimen/size25"
+              android:background="@drawable/ic_join_multisig_wallet"
+              android:layout_centerVertical="true"
+              android:layout_marginStart="@dimen/size80"/>
+        <com.devspark.robototextview.widget.RobotoTextView
+                style="@style/ButtonTextLabel"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginStart="@dimen/size280"
+                android:layout_marginEnd="@dimen/size140"
+                android:text="@string/action_join_shared_wallet"/>
+    </RelativeLayout>
+
+    <RelativeLayout android:id="@+id/restore_wallet_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/size250">
+        <View android:layout_width="@dimen/size63"
+              android:layout_height="@dimen/size63"
+              android:background="@drawable/ic_wallet_restore"
+              android:layout_centerVertical="true"
+              android:layout_marginStart="@dimen/size110"/>
+        <com.devspark.robototextview.widget.RobotoTextView
+                style="@style/ButtonTextLabel"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginStart="@dimen/size280"
+                android:layout_marginEnd="@dimen/size140"
+                android:text="@string/action_restore_wallet"/>
+    </RelativeLayout>
+</LinearLayout>

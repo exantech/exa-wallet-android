@@ -1,0 +1,47 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/size110">
+
+    <com.devspark.robototextview.widget.RobotoTextView
+            android:id="@+id/connection_notify"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size50"
+            android:text="@string/no_internet_connection"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text24"
+            android:gravity="center"
+            android:background="@color/red"
+            android:visibility="gone"/>
+
+    <RelativeLayout
+            android:id="@+id/sync_notify"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size100"
+            android:text="@string/no_internet_connection"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text24"
+            android:background="@color/black"
+            android:visibility="gone">
+        <com.devspark.robototextview.widget.RobotoTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/wallet_not_synс"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text24"
+                android:layout_marginStart="@dimen/size40"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"/>
+        <com.devspark.robototextview.widget.RobotoButton
+                android:id="@+id/sync_start"
+                android:layout_width="@dimen/size220"
+                android:layout_height="@dimen/size63"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="@dimen/size40"
+                android:background="@color/red"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text24"
+                android:text="@string/sync"/>
+    </RelativeLayout>
+</RelativeLayout>

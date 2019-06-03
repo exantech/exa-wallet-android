@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/shadow">
+
+    <include layout="@layout/toolbar_settings"
+             app:layout_scrollFlags="scroll|enterAlways"/>
+
+    <com.devspark.robototextview.widget.RobotoTextView
+            style="@style/ButtonBlackTextLabel"
+            android:layout_marginStart="@dimen/size40"
+            android:layout_marginEnd="@dimen/size140"
+            android:layout_marginTop="@dimen/size140"
+            android:text="@string/action_send_invite_code"/>
+
+    <com.devspark.robototextview.widget.RobotoTextView
+            style="@style/MultiNoteText"
+            android:layout_marginStart="@dimen/size40"
+            android:layout_marginEnd="@dimen/size140"
+            android:layout_marginTop="@dimen/size220"
+            android:maxLines="3"
+            android:text="@string/share_invite_code"/>
+
+    <View android:id="@+id/qr_code"
+          android:layout_width="@dimen/size320"
+          android:layout_height="@dimen/size320"
+          android:layout_centerHorizontal="true"
+          android:layout_marginTop="@dimen/size360"
+          android:background="@color/white"/>
+
+    <com.devspark.robototextview.widget.RobotoTextView
+            android:id="@+id/invite_code"
+            style="@style/MultiBlackText"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/qr_code"
+            android:layout_marginEnd="@dimen/size40"
+            android:layout_marginStart="@dimen/size40"
+            android:layout_marginTop="@dimen/size40"/>
+
+    <View android:id="@+id/share_button"
+          android:layout_width="@dimen/size160"
+          android:layout_height="@dimen/size160"
+          android:layout_marginStart="@dimen/size20"
+          android:layout_marginTop="@dimen/size320"
+          android:background="@drawable/ic_share"/>
+
+    <View android:id="@+id/copy_button"
+          android:layout_width="@dimen/size160"
+          android:layout_height="@dimen/size160"
+          android:layout_alignParentEnd="true"
+          android:layout_marginEnd="@dimen/size20"
+          android:layout_marginTop="@dimen/size320"
+          android:background="@drawable/ic_copy"/>
+
+    <com.devspark.robototextview.widget.RobotoTextView
+            android:id="@+id/participants_progress"
+            style="@style/MultiNoteText"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="@dimen/size40"
+            android:layout_marginBottom="@dimen/size40"
+            android:text="@string/participants_progress"/>
+</RelativeLayout>

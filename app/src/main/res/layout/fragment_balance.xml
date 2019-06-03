@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <include layout="@layout/toolbar_settings"
+             app:layout_scrollFlags="scroll|enterAlways"/>
+
+    <RelativeLayout android:id="@+id/header"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/size300"
+                    android:layout_marginTop="@dimen/size110"
+                    android:background="@color/orange">
+
+        <com.devspark.robototextview.widget.RobotoTextView
+                android:id="@+id/wallet_type"
+                style="@style/SingleBlackText"
+                android:layout_marginTop="@dimen/size32"
+                android:layout_centerHorizontal="true"/>
+
+        <View android:id="@+id/sync_status"
+                   android:layout_width="@dimen/size80"
+                   android:layout_height="@dimen/size80"
+                   android:layout_marginStart="@dimen/size40"
+                   android:layout_below="@+id/wallet_type"/>
+
+        <com.devspark.robototextview.widget.RobotoTextView
+                android:id="@+id/balance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text68"
+                android:textColor="@color/white"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/wallet_type"/>
+
+        <com.devspark.robototextview.widget.RobotoTextView
+                android:id="@+id/balance_usd"
+                style="@style/SingleText"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/balance"/>
+
+        <com.devspark.robototextview.widget.RobotoTextView
+                android:id="@+id/balance_unconfirmed"
+                style="@style/SmallSingleBlackText"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/balance_usd"
+                android:layout_marginTop="@dimen/size10"/>
+    </RelativeLayout>
+
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+                  android:layout_below="@id/header"
+                  android:orientation="vertical">
+
+        <LinearLayout android:id="@+id/txproposals_layout"
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:orientation="vertical">
+            <com.devspark.robototextview.widget.RobotoTextView
+                    style="@style/ShadowHeaderText"
+                    android:text="@string/txProposals"/>
+
+            <com.devspark.robototextview.widget.RobotoButton
+                    android:id="@+id/filter_proposals"
+                    android:layout_width="@dimen/size80"
+                    android:layout_height="@dimen/size80"
+                    android:layout_marginTop="@dimen/size32"
+                    android:layout_marginEnd="@dimen/size40"
+                    android:visibility="gone"
+                    android:background="@drawable/ic_add_circle_white"/>
+
+            <android.support.v7.widget.RecyclerView
+                    android:id="@+id/txproposals"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+        <com.devspark.robototextview.widget.RobotoTextView
+                style="@style/ShadowHeaderText"
+                android:text="@string/transactions"/>
+
+        <com.devspark.robototextview.widget.RobotoButton
+                android:id="@+id/filter_transactions"
+                android:layout_width="@dimen/size80"
+                android:layout_height="@dimen/size80"
+                android:layout_marginTop="@dimen/size32"
+                android:layout_marginEnd="@dimen/size40"
+                android:layout_gravity="end"
+                android:visibility="gone"
+                android:background="@drawable/ic_add_circle_white"/>
+
+        <android.support.v7.widget.RecyclerView
+                android:id="@+id/transactions"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+        <RelativeLayout android:id="@+id/empty_transactions"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+            <com.devspark.robototextview.widget.RobotoTextView
+                    style="@style/SingleBlackText"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/size160"
+                    android:text="@string/no_transactions_info"/>
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <com.getbase.floatingactionbutton.FloatingActionsMenu
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/ic_add_white"
+            android:layout_marginEnd="@dimen/size40"
+            android:layout_marginBottom="@dimen/size40"
+            app:fab_expandDirection="up"
+            app:fab_labelStyle="@style/menu_labels_style"
+            app:fab_labelsPosition="left">
+
+        <com.getbase.floatingactionbutton.FloatingActionButton
+                android:id="@+id/chart_fab"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="center"
+                android:src="@drawable/ic_bar_chart"
+                app:fab_colorNormal="@color/orange"
+                app:fab_title="@string/title_exchange_rates"
+                app:fab_colorPressed="@color/orange"/>
+
+        <com.getbase.floatingactionbutton.FloatingActionButton
+                android:id="@+id/receive_fab"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="center"
+                android:src="@drawable/ic_receive_white"
+                app:fab_colorNormal="@color/orange"
+                app:fab_title="@string/title_receive"
+                app:fab_colorPressed="@color/orange"/>
+
+        <com.getbase.floatingactionbutton.FloatingActionButton
+                android:id="@+id/send_fab"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="center"
+                android:padding="@dimen/size20"
+                android:src="@drawable/ic_send_white"
+                app:fab_colorNormal="@color/orange"
+                app:fab_title="@string/title_send"
+                app:fab_colorPressed="@color/orange"/>
+    </com.getbase.floatingactionbutton.FloatingActionsMenu>
+
+    <include layout="@layout/sync_notify"
+             app:layout_scrollFlags="scroll|enterAlways"/>
+</RelativeLayout>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:orientation="vertical"
+             android:layout_width="@dimen/size600"
+             android:layout_height="@dimen/size400"
+             android:background="@color/shadow">
+
+    <View android:id="@+id/icon"
+          android:background="@drawable/ic_tick"
+          android:layout_width="@dimen/size63"
+          android:layout_height="@dimen/size63"
+          android:layout_marginTop="@dimen/size80"
+          android:layout_gravity="center_horizontal"/>
+
+    <com.devspark.robototextview.widget.RobotoTextView
+            android:id="@+id/content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/size180"
+            android:layout_marginEnd="@dimen/size40"
+            android:layout_marginStart="@dimen/size40"
+            android:layout_gravity="center_horizontal"
+            android:textSize="@dimen/text40"
+            android:textColor="@color/black"/>
+
+    <com.devspark.robototextview.widget.RobotoButton
+            android:id="@+id/button"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_marginEnd="@dimen/size40"
+            android:layout_marginStart="@dimen/size40"
+            android:layout_marginBottom="@dimen/size40"
+            android:layout_gravity="center_horizontal|bottom"
+            android:text="@string/action_continue"
+            android:textSize="@dimen/text28"
+            android:textColor="@color/white"
+            android:background="@drawable/background_button"/>
+</FrameLayout>

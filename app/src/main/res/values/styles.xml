@@ -1,0 +1,214 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="MainButton">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_marginRight">@dimen/size40</item>
+        <item name="android:layout_marginLeft">@dimen/size40</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:background">@drawable/background_button</item>
+    </style>
+    <style name="MainBottomButton" parent="MainButton">
+        <item name="android:layout_alignParentBottom">true</item>
+        <item name="android:layout_marginBottom">@dimen/size40</item>
+    </style>
+    <style name="LinkButton">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:textSize">@dimen/text32</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+    <style name="MainTextInputLayout">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_marginLeft">@dimen/size40</item>
+        <item name="android:layout_marginRight">@dimen/size40</item>
+        <item name="android:textColorHint">@color/gray</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+    </style>
+    <style name="MainDialogTextInputLayout">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_marginLeft">@dimen/size40</item>
+        <item name="android:layout_marginRight">@dimen/size40</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+    </style>
+
+    <style name="AccentText">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/text32</item>
+        <item name="android:textColor">@color/orange</item>
+        <item name="android:singleLine">false</item>
+    </style>
+
+    <style name="SmallSingleNoteText">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/text24</item>
+        <item name="android:textColor">@color/gray</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:ellipsize">end</item>
+    </style>
+
+    <style name="SmallSingleBlackText">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/text24</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:ellipsize">end</item>
+    </style>
+
+    <style name="SmallSingleText">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/text24</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:ellipsize">end</item>
+    </style>
+
+    <style name="MultiNoteText">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/text32</item>
+        <item name="android:textColor">@color/gray</item>
+        <item name="android:singleLine">false</item>
+    </style>
+
+    <style name="BlackText">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/text32</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="InputBlackText" parent="BlackText">
+        <item name="android:layout_width">match_parent</item>
+    </style>
+
+    <style name="MainBlackText" parent="BlackText">
+        <item name="android:layout_width">wrap_content</item>
+    </style>
+
+    <style name="SingleBlackText" parent="MainBlackText">
+        <item name="android:ellipsize">end</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="ShadowHeaderText">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/size140</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:paddingStart">@dimen/size40</item>
+        <item name="android:textSize">@dimen/text32</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:background">@color/shadow</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="MultiBlackText" parent="MainBlackText">
+        <item name="android:singleLine">false</item>
+    </style>
+
+    <style name="MainBlackInputEditText" parent="InputBlackText">
+        <item name="android:textColorHint">@color/shadow</item>
+        <item name="android:backgroundTint">@color/shadow</item>
+    </style>
+
+    <style name="SingleBlackInputEditText" parent="MainBlackInputEditText">
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="MainText">
+        <item name="android:textSize">@dimen/text32</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="MainInputText" parent="MainText">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="MainViewText" parent="MainText">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="SingleText" parent="MainViewText">
+        <item name="android:ellipsize">end</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="MultiText" parent="MainViewText">
+        <item name="android:singleLine">false</item>
+    </style>
+
+    <style name="MainInputEditText" parent="MainInputText">
+        <item name="android:textColorHint">@color/shadow</item>
+        <item name="android:backgroundTint">@color/shadow</item>
+    </style>
+
+    <style name="SingleInputEditText" parent="MainInputEditText">
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="MultiInputEditText" parent="MainInputEditText">
+        <item name="android:singleLine">false</item>
+    </style>
+
+    <style name="ButtonTextLabel">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/text40</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="ButtonBlackTextLabel">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/text40</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="LeftTextInfo">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">@dimen/size63</item>
+        <item name="android:textSize">@dimen/text32</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+    <style name="MainTextInfo" parent="LeftTextInfo">
+        <item name="android:layout_marginRight">@dimen/size63</item>
+    </style>
+
+
+    <style name="ToolBarStyle" parent="Theme.AppCompat">
+        <item name="android:textColorPrimary">@color/white</item>
+        <item name="android:textColorSecondary">@color/white</item>
+        <item name="android:background">@color/orange</item>
+        <item name="colorPrimary">@color/orange</item>
+        <item name="colorPrimaryDark">@color/black</item>
+        <item name="actionMenuTextColor">@color/white</item>
+    </style>
+
+    <style name="menu_labels_style">
+        <item name="android:background">@color/gray</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/text32</item>
+        <item name="android:padding">@dimen/size10</item>
+
+    </style>
+
+</resources>

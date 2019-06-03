@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/black">
+
+    <include layout="@layout/toolbar"
+             app:layout_scrollFlags="scroll|enterAlways"/>
+
+
+    <RelativeLayout android:layout_width="match_parent"
+                    android:layout_height="@dimen/size125"
+                    android:layout_marginTop="@dimen/size180"
+                    android:layout_centerHorizontal="true">
+
+        <View android:id="@+id/wallet_color"
+              android:layout_width="@dimen/size125"
+              android:layout_height="@dimen/size125"
+              android:layout_centerHorizontal="true"/>
+
+        <View android:layout_width="@dimen/size40"
+              android:layout_height="@dimen/size25"
+              android:layout_centerHorizontal="true"
+              android:layout_centerVertical="true"
+              android:background="@drawable/ic_personal_wallet_white"/>
+
+        <View android:id="@+id/wallet_color_orange"
+              android:layout_width="@dimen/size40"
+              android:layout_height="@dimen/size40"
+              android:layout_marginStart="@dimen/size80"
+              android:layout_centerVertical="true"
+              android:background="@color/orange"/>
+
+        <View android:id="@+id/wallet_color_tangelo"
+              android:layout_width="@dimen/size40"
+              android:layout_height="@dimen/size40"
+              android:layout_marginStart="@dimen/size80"
+              android:layout_alignStart="@+id/wallet_color_orange"
+              android:layout_centerVertical="true"
+              android:background="@color/tangelo"/>
+
+        <View android:id="@+id/wallet_color_blue"
+              android:layout_width="@dimen/size40"
+              android:layout_height="@dimen/size40"
+              android:layout_marginStart="@dimen/size80"
+              android:layout_alignStart="@+id/wallet_color_tangelo"
+              android:layout_centerVertical="true"
+              android:background="@color/blue"/>
+
+        <View android:id="@+id/wallet_color_pale"
+              android:layout_width="@dimen/size40"
+              android:layout_height="@dimen/size40"
+              android:layout_marginEnd="@dimen/size80"
+              android:layout_alignParentEnd="true"
+              android:layout_centerVertical="true"
+              android:background="@color/pale"/>
+
+        <View android:id="@+id/wallet_color_green"
+              android:layout_width="@dimen/size40"
+              android:layout_height="@dimen/size40"
+              android:layout_marginEnd="@dimen/size80"
+              android:layout_alignEnd="@+id/wallet_color_pale"
+              android:layout_centerVertical="true"
+              android:background="@color/green"/>
+
+        <View android:id="@+id/wallet_color_purple"
+              android:layout_width="@dimen/size40"
+              android:layout_height="@dimen/size40"
+              android:layout_marginEnd="@dimen/size80"
+              android:layout_alignEnd="@+id/wallet_color_green"
+              android:layout_centerVertical="true"
+              android:background="@color/purple"/>
+    </RelativeLayout>
+
+
+    <ScrollView android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/size360"
+                android:layout_marginBottom="@dimen/size200">
+        <RelativeLayout android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+            <android.support.design.widget.TextInputLayout
+                    android:id="@+id/wallet_layout"
+                    style="@style/MainTextInputLayout">
+                <com.devspark.robototextview.widget.RobotoEditText
+                        android:id="@+id/wallet_name"
+                        style="@style/SingleInputEditText"
+                        android:hint="@string/prompt_wallet_name_create"/>
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                    android:id="@+id/password_layout"
+                    style="@style/MainTextInputLayout"
+                    android:layout_below="@+id/wallet_layout"
+                    android:layout_marginTop="@dimen/size32">
+                <com.devspark.robototextview.widget.RobotoEditText
+                        android:id="@+id/password"
+                        style="@style/SingleInputEditText"
+                        android:hint="@string/prompt_wallet_password"
+                        android:inputType="textPassword"/>
+            </android.support.design.widget.TextInputLayout>
+
+            <View android:id="@+id/security"
+                  android:layout_width="@dimen/size4"
+                  android:layout_height="@dimen/size10"
+                  android:background="@color/shadow"
+                  android:layout_below="@+id/password_layout"
+                  android:layout_gravity="start"
+                  android:layout_marginTop="@dimen/size20"
+                  android:layout_marginStart="@dimen/size40"/>
+
+            <android.support.design.widget.TextInputLayout
+                    android:id="@+id/confirm_layout"
+                    style="@style/MainTextInputLayout"
+                    android:layout_below="@id/security"
+                    android:layout_marginTop="@dimen/size32">
+                <com.devspark.robototextview.widget.RobotoEditText
+                        android:id="@+id/confirm"
+                        style="@style/SingleInputEditText"
+                        android:hint="@string/prompt_confirm_wallet_password"
+                        android:inputType="textPassword"/>
+            </android.support.design.widget.TextInputLayout>
+
+            <com.devspark.robototextview.widget.RobotoTextView
+                    android:layout_marginStart="@dimen/size40"
+                    android:layout_marginEnd="@dimen/size40"
+                    android:layout_marginTop="@dimen/size20"
+                    android:layout_below="@+id/confirm_layout"
+                    style="@style/SmallSingleNoteText"
+                    android:text="@string/mnemonic_language"/>
+
+            <Spinner android:id="@+id/language"
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:layout_marginStart="@dimen/size40"
+                     android:layout_marginEnd="@dimen/size40"
+                     android:layout_marginTop="@dimen/size63"
+                     android:layout_below="@+id/confirm_layout"
+                     android:entries="@array/languages"/>
+
+            <View android:layout_width="@dimen/size20"
+                  android:layout_height="@dimen/size10"
+                  android:layout_alignEnd="@+id/language"
+                  android:layout_marginTop="@dimen/size95"
+                  android:layout_below="@+id/confirm_layout"
+                  android:background="@drawable/ic_spinner_select"/>
+
+            <View android:layout_width="match_parent"
+                  android:layout_height="@dimen/size4"
+                  android:layout_marginStart="@dimen/size40"
+                  android:layout_marginEnd="@dimen/size40"
+                  android:layout_marginTop="@dimen/size10"
+                  android:layout_below="@+id/language"
+                  android:background="@color/gray_light"/>
+
+            <android.support.design.widget.TextInputLayout
+                    android:id="@+id/node_layout"
+                    style="@style/MainTextInputLayout"
+                    android:layout_below="@id/language"
+                    android:layout_marginTop="@dimen/size50">
+                <com.devspark.robototextview.widget.RobotoEditText
+                        android:id="@+id/node"
+                        style="@style/SingleInputEditText"
+                        android:text="@string/default_node_prod"
+                        android:hint="@string/prompt_remote_node"/>
+            </android.support.design.widget.TextInputLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+    <com.devspark.robototextview.widget.RobotoButton
+            android:id="@+id/continue_button"
+            style="@style/MainBottomButton"
+            android:enabled="true"
+            android:text="@string/action_continue"/>
+</RelativeLayout>

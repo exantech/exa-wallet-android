@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white">
+
+    <include layout="@layout/toolbar"
+             app:layout_scrollFlags="scroll|enterAlways"/>
+
+    <RelativeLayout android:layout_width="match_parent"
+                    android:layout_height="@dimen/size125"
+                    android:layout_marginTop="@dimen/size180"
+                    android:layout_centerHorizontal="true">
+
+        <View android:id="@+id/wallet_color"
+              android:layout_width="@dimen/size125"
+              android:layout_height="@dimen/size125"
+              android:layout_centerHorizontal="true"/>
+
+        <View android:id="@+id/personal_wallet"
+              android:layout_width="@dimen/size40"
+              android:layout_height="@dimen/size25"
+              android:layout_centerHorizontal="true"
+              android:layout_centerVertical="true"
+              android:background="@drawable/ic_personal_wallet_white"/>
+
+        <View android:id="@+id/multisig_wallet"
+              android:layout_width="@dimen/size63"
+              android:layout_height="@dimen/size25"
+              android:layout_centerHorizontal="true"
+              android:layout_centerVertical="true"
+              android:background="@drawable/ic_multisig_wallet_white"/>
+
+        <View android:id="@+id/wallet_color_orange"
+              android:layout_width="@dimen/size40"
+              android:layout_height="@dimen/size40"
+              android:layout_marginStart="@dimen/size80"
+              android:layout_centerVertical="true"
+              android:background="@color/orange"/>
+
+        <View android:id="@+id/wallet_color_tangelo"
+              android:layout_width="@dimen/size40"
+              android:layout_height="@dimen/size40"
+              android:layout_marginStart="@dimen/size80"
+              android:layout_alignStart="@+id/wallet_color_orange"
+              android:layout_centerVertical="true"
+              android:background="@color/tangelo"/>
+
+        <View android:id="@+id/wallet_color_blue"
+              android:layout_width="@dimen/size40"
+              android:layout_height="@dimen/size40"
+              android:layout_marginStart="@dimen/size80"
+              android:layout_alignStart="@+id/wallet_color_tangelo"
+              android:layout_centerVertical="true"
+              android:background="@color/blue"/>
+
+        <View android:id="@+id/wallet_color_pale"
+              android:layout_width="@dimen/size40"
+              android:layout_height="@dimen/size40"
+              android:layout_marginEnd="@dimen/size80"
+              android:layout_alignParentEnd="true"
+              android:layout_centerVertical="true"
+              android:background="@color/pale"/>
+
+        <View android:id="@+id/wallet_color_green"
+              android:layout_width="@dimen/size40"
+              android:layout_height="@dimen/size40"
+              android:layout_marginEnd="@dimen/size80"
+              android:layout_alignEnd="@+id/wallet_color_pale"
+              android:layout_centerVertical="true"
+              android:background="@color/green"/>
+
+        <View android:id="@+id/wallet_color_purple"
+              android:layout_width="@dimen/size40"
+              android:layout_height="@dimen/size40"
+              android:layout_marginEnd="@dimen/size80"
+              android:layout_alignEnd="@+id/wallet_color_green"
+              android:layout_centerVertical="true"
+              android:background="@color/purple"/>
+    </RelativeLayout>
+
+    <ScrollView android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/size360"
+                android:layout_marginBottom="@dimen/size200">
+        <RelativeLayout android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+            <android.support.design.widget.TextInputLayout
+                    android:id="@+id/wallet_layout"
+                    style="@style/MainTextInputLayout">
+                <com.devspark.robototextview.widget.RobotoEditText
+                        android:id="@+id/wallet_name"
+                        style="@style/SingleBlackInputEditText"
+                        android:hint="@string/prompt_wallet_name_create"/>
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                    android:id="@+id/node_layout"
+                    style="@style/MainTextInputLayout"
+                    android:layout_below="@id/wallet_layout"
+                    android:layout_marginTop="@dimen/size32">
+                <com.devspark.robototextview.widget.RobotoEditText
+                        android:id="@+id/node"
+                        style="@style/SingleBlackInputEditText"
+                        android:text="@string/default_node_prod"
+                        android:hint="@string/prompt_remote_node"/>
+            </android.support.design.widget.TextInputLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+    <com.devspark.robototextview.widget.RobotoButton
+            android:id="@+id/continue_button"
+            style="@style/MainBottomButton"
+            android:enabled="false"
+            android:text="@string/action_save_changes"/>
+</RelativeLayout>

@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:background="@color/shadow">
+
+    <include layout="@layout/toolbar"
+             app:layout_scrollFlags="scroll|enterAlways"/>
+
+    <LinearLayout android:layout_marginTop="@dimen/size110"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:orientation="vertical">
+        <RelativeLayout android:id="@+id/edit_wallet"
+                        android:layout_height="@dimen/size125"
+                        android:layout_width="match_parent"
+                        android:background="@color/white">
+            <View android:layout_width="@dimen/size80"
+                  android:layout_height="@dimen/size80"
+                  android:layout_marginTop="@dimen/size20"
+                  android:layout_marginStart="@dimen/size40"
+                  android:background="@drawable/ic_edit"/>
+
+            <com.devspark.robototextview.widget.RobotoTextView
+                    style="@style/SingleBlackText"
+                    android:layout_marginTop="@dimen/size40"
+                    android:layout_marginStart="@dimen/size160"
+                    android:text="@string/action_edit_wallet"/>
+        </RelativeLayout>
+        <RelativeLayout android:id="@+id/remind_mnemonic"
+                        android:layout_height="@dimen/size125"
+                        android:layout_width="match_parent"
+                        android:background="@color/white">
+            <View android:layout_width="@dimen/size80"
+                  android:layout_height="@dimen/size80"
+                  android:layout_marginTop="@dimen/size20"
+                  android:layout_marginStart="@dimen/size40"
+                  android:background="@drawable/ic_mnemonic"/>
+
+            <com.devspark.robototextview.widget.RobotoTextView
+                    style="@style/SingleBlackText"
+                    android:layout_marginTop="@dimen/size40"
+                    android:layout_marginStart="@dimen/size160"
+                    android:text="@string/action_remind_mnemonic"/>
+        </RelativeLayout>
+        <RelativeLayout android:id="@+id/change_password"
+                        android:layout_height="@dimen/size125"
+                        android:layout_width="match_parent"
+                        android:background="@color/white">
+            <View android:layout_width="@dimen/size80"
+                  android:layout_height="@dimen/size80"
+                  android:layout_marginTop="@dimen/size20"
+                  android:layout_marginStart="@dimen/size40"
+                  android:background="@drawable/ic_change_password"/>
+
+            <com.devspark.robototextview.widget.RobotoTextView
+                    style="@style/SingleBlackText"
+                    android:layout_marginTop="@dimen/size40"
+                    android:layout_marginStart="@dimen/size160"
+                    android:text="@string/action_change_password"/>
+        </RelativeLayout>
+        <RelativeLayout android:id="@+id/rescan"
+                        android:layout_height="@dimen/size125"
+                        android:layout_width="match_parent"
+                        android:background="@color/white">
+            <View android:layout_width="@dimen/size80"
+                  android:layout_height="@dimen/size80"
+                  android:layout_marginTop="@dimen/size20"
+                  android:layout_marginStart="@dimen/size40"
+                  android:background="@drawable/ic_rescan"/>
+
+            <com.devspark.robototextview.widget.RobotoTextView
+                    style="@style/SingleBlackText"
+                    android:layout_marginTop="@dimen/size40"
+                    android:layout_marginStart="@dimen/size160"
+                    android:text="@string/action_rescan"/>
+        </RelativeLayout>
+        <RelativeLayout android:id="@+id/change_wallet_type_layout"
+                        android:layout_height="@dimen/size125"
+                        android:layout_width="match_parent"
+                        android:background="@color/white">
+            <View android:layout_width="@dimen/size80"
+                  android:layout_height="@dimen/size80"
+                  android:layout_marginTop="@dimen/size20"
+                  android:layout_marginStart="@dimen/size40"
+                  android:background="@drawable/ic_mnemonic"/>
+
+            <com.devspark.robototextview.widget.RobotoTextView
+                    android:id="@+id/change_wallet_type"
+                    style="@style/SingleBlackText"
+                    android:layout_marginTop="@dimen/size40"
+                    android:layout_marginStart="@dimen/size160"
+                    android:text="@string/action_change_mode"/>
+        </RelativeLayout>
+        <RelativeLayout android:id="@+id/drop_imported_layout"
+                        android:layout_height="@dimen/size125"
+                        android:layout_width="match_parent"
+                        android:background="@color/white">
+            <View android:layout_width="@dimen/size80"
+                  android:layout_height="@dimen/size80"
+                  android:layout_marginTop="@dimen/size20"
+                  android:layout_marginStart="@dimen/size40"
+                  android:background="@drawable/ic_mnemonic"/>
+
+            <com.devspark.robototextview.widget.RobotoTextView
+                    android:id="@+id/drop_imported"
+                    style="@style/SingleBlackText"
+                    android:layout_marginTop="@dimen/size40"
+                    android:layout_marginStart="@dimen/size160"
+                    android:text="@string/action_drop_imported"/>
+        </RelativeLayout>
+        <RelativeLayout android:id="@+id/delete_wallet"
+                        android:layout_height="@dimen/size125"
+                        android:layout_width="match_parent"
+                        android:layout_marginTop="@dimen/size40"
+                        android:background="@color/white">
+
+            <View android:layout_width="@dimen/size80"
+                  android:layout_height="@dimen/size80"
+                  android:layout_marginTop="@dimen/size20"
+                  android:layout_marginStart="@dimen/size40"
+                  android:background="@drawable/ic_delete"/>
+
+            <com.devspark.robototextview.widget.RobotoTextView
+                    style="@style/SingleBlackText"
+                    android:layout_marginTop="@dimen/size40"
+                    android:layout_marginStart="@dimen/size160"
+                    android:textColor="@color/orange"
+                    android:text="@string/action_delete_wallet"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <include layout="@layout/sync_notify"
+             app:layout_scrollFlags="scroll|enterAlways"/>
+</RelativeLayout>

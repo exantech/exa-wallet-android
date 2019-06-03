@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:background="@color/black">
+
+    <View android:layout_height="@dimen/size200"
+          android:layout_width="@dimen/size200"
+          android:layout_gravity="center_horizontal"
+          android:layout_marginTop="@dimen/size100"
+          android:background="@drawable/ic_exawallet"/>
+
+    <com.devspark.robototextview.widget.RobotoTextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/size420"
+            android:textSize="@dimen/text32"
+            android:textColor="@color/white"
+            android:text="@string/create_pin"/>
+
+    <View android:id="@+id/pin0"
+          android:layout_width="@dimen/size20"
+          android:layout_height="@dimen/size20"
+          android:layout_gravity="center_horizontal|top"
+          android:layout_marginTop="@dimen/size500"
+          android:layout_marginEnd="@dimen/size63"
+          android:background="@drawable/oval_fade_blue"/>
+
+    <View android:id="@+id/pin1"
+          android:layout_width="@dimen/size20"
+          android:layout_height="@dimen/size20"
+          android:layout_gravity="center_horizontal|top"
+          android:layout_marginTop="@dimen/size500"
+          android:layout_marginEnd="@dimen/size20"
+          android:background="@drawable/oval_fade_blue"/>
+
+    <View android:id="@+id/pin2"
+          android:layout_width="@dimen/size20"
+          android:layout_height="@dimen/size20"
+          android:layout_gravity="center_horizontal|top"
+          android:layout_marginTop="@dimen/size500"
+          android:layout_marginStart="@dimen/size20"
+          android:background="@drawable/oval_fade_blue"/>
+
+    <View android:id="@+id/pin3"
+          android:layout_width="@dimen/size20"
+          android:layout_height="@dimen/size20"
+          android:layout_gravity="center_horizontal|top"
+          android:layout_marginTop="@dimen/size500"
+          android:layout_marginStart="@dimen/size63"
+          android:background="@drawable/oval_fade_blue"/>
+
+    <View android:id="@+id/button_0"
+          android:layout_width="@dimen/size100"
+          android:layout_height="@dimen/size100"
+          android:layout_gravity="center_horizontal|bottom"
+          android:layout_marginBottom="@dimen/size50"/>
+
+    <View android:id="@+id/button_1"
+          android:layout_width="@dimen/size100"
+          android:layout_height="@dimen/size100"
+          android:layout_gravity="start|bottom"
+          android:layout_marginBottom="@dimen/size400"
+          android:layout_marginStart="@dimen/size125"/>
+
+    <View android:id="@+id/button_2"
+          android:layout_width="@dimen/size100"
+          android:layout_height="@dimen/size100"
+          android:layout_gravity="center_horizontal|bottom"
+          android:layout_marginBottom="@dimen/size400"/>
+
+    <View android:id="@+id/button_3"
+          android:layout_width="@dimen/size100"
+          android:layout_height="@dimen/size100"
+          android:layout_gravity="end|bottom"
+          android:layout_marginBottom="@dimen/size400"
+          android:layout_marginEnd="@dimen/size125"/>
+
+    <View android:id="@+id/button_4"
+          android:layout_width="@dimen/size100"
+          android:layout_height="@dimen/size100"
+          android:layout_gravity="start|bottom"
+          android:layout_marginBottom="@dimen/size280"
+          android:layout_marginStart="@dimen/size125"/>
+
+    <View android:id="@+id/button_5"
+          android:layout_width="@dimen/size100"
+          android:layout_height="@dimen/size100"
+          android:layout_gravity="center_horizontal|bottom"
+          android:layout_marginBottom="@dimen/size280"/>
+
+    <View android:id="@+id/button_6"
+          android:layout_width="@dimen/size100"
+          android:layout_height="@dimen/size100"
+          android:layout_gravity="end|bottom"
+          android:layout_marginBottom="@dimen/size280"
+          android:layout_marginEnd="@dimen/size125"/>
+
+    <View android:id="@+id/button_7"
+          android:layout_width="@dimen/size100"
+          android:layout_height="@dimen/size100"
+          android:layout_gravity="start|bottom"
+          android:layout_marginBottom="@dimen/size160"
+          android:layout_marginStart="@dimen/size125"/>
+
+    <View android:id="@+id/button_8"
+          android:layout_width="@dimen/size100"
+          android:layout_height="@dimen/size100"
+          android:layout_gravity="center_horizontal|bottom"
+          android:layout_marginBottom="@dimen/size160"/>
+
+    <View android:id="@+id/button_9"
+          android:layout_width="@dimen/size100"
+          android:layout_height="@dimen/size100"
+          android:layout_gravity="end|bottom"
+          android:layout_marginBottom="@dimen/size160"
+          android:layout_marginEnd="@dimen/size125"/>
+
+    <View android:id="@+id/button_back"
+          android:layout_width="@dimen/size100"
+          android:layout_height="@dimen/size100"
+          android:layout_gravity="end|bottom"
+          android:layout_marginBottom="@dimen/size50"
+          android:layout_marginEnd="@dimen/size125"/>
+
+    <View android:id="@+id/button_exit"
+          android:layout_width="@dimen/size100"
+          android:layout_height="@dimen/size100"
+          android:layout_gravity="start|bottom"
+          android:layout_marginBottom="@dimen/size50"
+          android:layout_marginStart="@dimen/size125"/>
+
+    <com.devspark.robototextview.widget.RobotoTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|bottom"
+            android:layout_marginBottom="@dimen/size63"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text68"
+            android:text="0"/>
+
+    <com.devspark.robototextview.widget.RobotoTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start|bottom"
+            android:layout_marginBottom="@dimen/size420"
+            android:layout_marginStart="@dimen/size160"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text68"
+            android:text="1"/>
+
+    <com.devspark.robototextview.widget.RobotoTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|bottom"
+            android:layout_marginBottom="@dimen/size420"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text68"
+            android:text="2"/>
+
+    <com.devspark.robototextview.widget.RobotoTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end|bottom"
+            android:layout_marginBottom="@dimen/size420"
+            android:layout_marginEnd="@dimen/size160"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text68"
+            android:text="3"/>
+
+    <com.devspark.robototextview.widget.RobotoTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start|bottom"
+            android:layout_marginBottom="@dimen/size300"
+            android:layout_marginStart="@dimen/size160"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text68"
+            android:text="4"/>
+
+    <com.devspark.robototextview.widget.RobotoTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|bottom"
+            android:layout_marginBottom="@dimen/size300"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text68"
+            android:text="5"/>
+
+    <com.devspark.robototextview.widget.RobotoTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end|bottom"
+            android:layout_marginBottom="@dimen/size300"
+            android:layout_marginEnd="@dimen/size160"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text68"
+            android:text="6"/>
+
+    <com.devspark.robototextview.widget.RobotoTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start|bottom"
+            android:layout_marginBottom="@dimen/size180"
+            android:layout_marginStart="@dimen/size160"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text68"
+            android:text="7"/>
+
+    <com.devspark.robototextview.widget.RobotoTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|bottom"
+            android:layout_marginBottom="@dimen/size180"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text68"
+            android:text="8"/>
+
+    <com.devspark.robototextview.widget.RobotoTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end|bottom"
+            android:layout_marginBottom="@dimen/size180"
+            android:layout_marginEnd="@dimen/size160"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text68"
+            android:text="9"/>
+
+    <View android:layout_width="@dimen/size50"
+          android:layout_height="@dimen/size40"
+          android:layout_gravity="end|bottom"
+          android:layout_marginBottom="@dimen/size80"
+          android:layout_marginEnd="@dimen/size160"
+          android:background="@drawable/ic_backspace"/>
+
+    <com.devspark.robototextview.widget.RobotoTextView
+            android:id="@+id/exit_title_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start|bottom"
+            android:layout_marginBottom="@dimen/size90"
+            android:layout_marginStart="@dimen/size160"
+            android:textColor="@color/blue"
+            android:textSize="@dimen/text24"
+            android:text="@string/cancel"/>
+</FrameLayout>

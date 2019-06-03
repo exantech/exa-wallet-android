@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+    <include layout="@layout/toolbar_settings"
+             app:layout_scrollFlags="scroll|enterAlways"/>
+
+    <RelativeLayout android:id="@+id/header"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/size160"
+                    android:layout_marginTop="@dimen/size110"
+                    android:background="@color/orange">
+
+        <com.devspark.robototextview.widget.RobotoTextView
+                android:id="@+id/balance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text68"
+                android:textColor="@color/white"
+                android:layout_centerHorizontal="true"/>
+
+        <com.devspark.robototextview.widget.RobotoTextView
+                android:id="@+id/balance_ticker"
+                style="@style/SingleText"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/balance"/>
+    </RelativeLayout>
+
+    <com.exawallet.widget.Chart
+            android:id="@+id/chart_fab"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/header"
+            android:layout_marginTop="@dimen/size40"
+            android:layout_marginBottom="@dimen/size160"
+            android:layout_marginStart="@dimen/size40"
+            android:layout_marginEnd="@dimen/size40"/>
+
+    <android.support.v7.widget.AppCompatSpinner
+            android:id="@+id/ticker"
+            android:layout_width="@dimen/size340"
+            android:layout_height="@dimen/size100"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="@dimen/size40"
+            android:layout_marginBottom="@dimen/size40"
+            android:textSize="@dimen/text24"
+            android:textColor="@color/black"
+            android:text="@string/ticker"/>
+
+    <android.support.v7.widget.AppCompatSpinner
+            android:id="@+id/period"
+            android:layout_width="@dimen/size250"
+            android:layout_height="@dimen/size100"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="@dimen/size40"
+            android:layout_marginBottom="@dimen/size40"
+            android:textSize="@dimen/text24"
+            android:textColor="@color/black"
+            android:text="@string/period"/>
+
+    <include layout="@layout/sync_notify"
+             app:layout_scrollFlags="scroll|enterAlways"/>
+</RelativeLayout>

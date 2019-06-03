@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white">
+
+    <include layout="@layout/toolbar_settings"
+             app:layout_scrollFlags="scroll|enterAlways"/>
+
+    <ScrollView android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/size110"
+                android:layout_above="@+id/error_notify"
+                android:layout_marginBottom="@dimen/size20">
+
+        <RelativeLayout android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+            <android.support.design.widget.TextInputLayout
+                    android:id="@+id/address_layout"
+                    style="@style/MainTextInputLayout"
+                    android:layout_marginTop="@dimen/size80">
+                <com.devspark.robototextview.widget.RobotoEditText
+                        android:id="@+id/address"
+                        style="@style/SingleBlackInputEditText"
+                        android:hint="@string/prompt_address"
+                        android:inputType="text"/>
+            </android.support.design.widget.TextInputLayout>
+
+            <View android:id="@+id/qr_code"
+                  style="@style/MainTextInputLayout"
+                  android:layout_width="@dimen/size63"
+                  android:layout_height="@dimen/size63"
+                  android:background="@drawable/ic_qr"
+                  android:layout_alignParentEnd="true"
+                  android:visibility="gone"
+                  android:layout_marginTop="@dimen/size90"
+                  android:layout_marginEnd="@dimen/size80"/>
+
+            <android.support.design.widget.TextInputLayout
+                    android:id="@+id/amount_layout"
+                    style="@style/MainTextInputLayout"
+                    android:layout_below="@+id/address_layout"
+                    android:layout_marginTop="@dimen/size80">
+                <com.devspark.robototextview.widget.RobotoEditText
+                        android:id="@+id/amount"
+                        style="@style/SingleBlackInputEditText"
+                        android:textSize="@dimen/text68"
+                        android:hint="@string/prompt_amount"
+                        android:inputType="numberDecimal"/>
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/payment_id_layout"
+                style="@style/MainTextInputLayout"
+                android:layout_below="@+id/amount_layout"
+                android:layout_marginTop="@dimen/size80">
+            <com.devspark.robototextview.widget.RobotoEditText
+                    android:id="@+id/payment_id"
+                    style="@style/SingleBlackInputEditText"
+                    android:hint="@string/prompt_payment_id"
+                    android:inputType="numberDecimal"/>
+        </android.support.design.widget.TextInputLayout>
+
+            <com.devspark.robototextview.widget.RobotoTextView
+                    android:id="@+id/payment_id_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="@dimen/size80"
+                    android:layout_below="@+id/amount_layout"
+                    android:layout_marginTop="@dimen/size110"
+                    android:textColor="@color/orange"
+                    android:textSize="@dimen/text32"
+                    android:text="@string/generate"/>
+
+            <android.support.design.widget.TextInputLayout
+                    android:id="@+id/payment_note_layout"
+                    style="@style/MainTextInputLayout"
+                    android:layout_below="@+id/payment_id_layout"
+                    android:layout_marginTop="@dimen/size80">
+                <com.devspark.robototextview.widget.RobotoEditText
+                        android:id="@+id/payment_note"
+                        style="@style/SingleBlackInputEditText"
+                        android:hint="@string/prompt_payment_note_optional"/>
+            </android.support.design.widget.TextInputLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+    <TextView android:id="@+id/error_notify"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginStart="@dimen/size40"
+              android:layout_marginEnd="@dimen/size40"
+              android:textColor="@color/red"
+              android:textSize="@dimen/text22"
+              android:maxLines="10"
+              android:layout_above="@+id/send_button"
+              android:layout_marginBottom="@dimen/size40"/>
+
+    <com.devspark.robototextview.widget.RobotoButton
+            android:id="@+id/send_button"
+            style="@style/MainBottomButton"
+            android:enabled="false"
+            android:text="@string/action_send"/>
+
+    <include layout="@layout/sync_notify"
+             app:layout_scrollFlags="scroll|enterAlways"/>
+</RelativeLayout>

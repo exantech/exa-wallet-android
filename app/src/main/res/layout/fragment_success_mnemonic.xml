@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/black">
+
+    <include layout="@layout/toolbar"
+             app:layout_scrollFlags="scroll|enterAlways"/>
+
+    <View android:layout_width="@dimen/size125"
+          android:layout_height="@dimen/size125"
+          android:background="@drawable/ic_confirmed"
+          android:layout_marginTop="@dimen/size160"
+          android:layout_centerHorizontal="true"/>
+
+    <com.devspark.robototextview.widget.RobotoTextView
+            style="@style/MultiText"
+            android:layout_marginTop="@dimen/size320"
+            android:layout_marginStart="@dimen/size40"
+            android:layout_marginEnd="@dimen/size40"
+            android:text="@string/key_confirmed"/>
+
+    <com.devspark.robototextview.widget.RobotoTextView
+            style="@style/MultiNoteText"
+            android:layout_marginTop="@dimen/size380"
+            android:layout_marginStart="@dimen/size40"
+            android:layout_marginEnd="@dimen/size40"
+            android:text="@string/keep_mnemonic"/>
+
+    <com.devspark.robototextview.widget.RobotoButton
+            android:id="@+id/button_continue"
+            style="@style/MainBottomButton"
+            android:text="@string/action_continue"/>
+</RelativeLayout>

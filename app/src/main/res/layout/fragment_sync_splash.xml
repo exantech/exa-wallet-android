@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:keepScreenOn="true"
+             android:background="@color/black">
+
+    <com.exawallet.widget.AnimatedCircleProgress
+            android:layout_width="@dimen/size250"
+            android:layout_height="@dimen/size250"
+            android:layout_gravity="center"/>
+
+    <View android:layout_width="@dimen/size160"
+          android:layout_height="@dimen/size160"
+          android:background="@drawable/ic_exawallet"
+          android:layout_gravity="center"/>
+
+    <com.devspark.robototextview.widget.RobotoTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginEnd="@dimen/size250"
+            android:text="@string/exa"
+            android:textSize="@dimen/text40"
+            android:textColor="@color/white"
+            android:textAllCaps="true"/>
+
+    <com.devspark.robototextview.widget.RobotoTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="@dimen/size250"
+            android:text="@string/wallet"
+            android:textSize="@dimen/text40"
+            android:textColor="@color/white"/>
+
+    <com.devspark.robototextview.widget.RobotoTextView
+            android:id="@+id/percent_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/size220"
+            android:textSize="@dimen/text40"
+            android:textColor="@color/white"
+            android:text="@string/blockchain_synchronization"/>
+
+    <com.devspark.robototextview.widget.RobotoTextView
+            android:id="@+id/connection_notify"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size50"
+            android:text="@string/no_internet_connection"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text24"
+            android:gravity="center"
+            android:background="@color/red"
+            android:visibility="gone"/>
+</FrameLayout>

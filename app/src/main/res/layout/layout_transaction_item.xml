@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:id="@+id/info"
+             android:layout_width="match_parent"
+             android:layout_height="@dimen/size180">
+
+    <View android:id="@+id/icon"
+          android:layout_width="@dimen/size100"
+          android:layout_height="@dimen/size100"
+          android:layout_marginStart="@dimen/size20"
+          android:layout_gravity="center_vertical|start"/>
+
+    <View android:id="@+id/status"
+          android:layout_width="@dimen/size40"
+          android:layout_height="@dimen/size40"
+          android:layout_marginEnd="@dimen/size40"
+          android:layout_gravity="center_vertical|end"
+          android:visibility="gone"/>
+
+    <com.devspark.robototextview.widget.RobotoTextView
+            android:id="@+id/amount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/size160"
+            android:layout_marginEnd="@dimen/size110"
+            android:layout_marginTop="@dimen/size50"
+            android:layout_gravity="start|top"
+            android:textSize="@dimen/text32"
+            android:textColor="@color/black"/>
+
+    <com.devspark.robototextview.widget.RobotoTextView
+            android:id="@+id/datetime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/size160"
+            android:layout_marginEnd="@dimen/size110"
+            android:layout_marginBottom="@dimen/size50"
+            android:layout_gravity="start|bottom"
+            android:textSize="@dimen/text24"
+            android:textColor="@color/gray"/>
+</FrameLayout>

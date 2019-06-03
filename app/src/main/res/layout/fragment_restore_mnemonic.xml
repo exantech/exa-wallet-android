@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/black">
+
+    <include layout="@layout/toolbar"
+             app:layout_scrollFlags="scroll|enterAlways"/>
+
+    <android.support.design.widget.TextInputLayout
+            android:id="@+id/wallet_layout"
+            style="@style/MainTextInputLayout"
+            android:layout_marginTop="@dimen/size180">
+        <com.devspark.robototextview.widget.RobotoEditText
+                android:id="@+id/block_or_date"
+                style="@style/SingleInputEditText"
+                android:inputType="number"
+                android:hint="@string/prompt_block_height"/>
+    </android.support.design.widget.TextInputLayout>
+
+    <View android:id="@+id/calendar"
+          android:layout_width="@dimen/size80"
+          android:layout_height="@dimen/size80"
+          android:layout_marginTop="@dimen/size180"
+          android:layout_marginEnd="@dimen/size40"
+          android:layout_alignParentEnd="true"
+          android:background="@drawable/ic_calendar_today"/>
+
+    <View android:layout_width="match_parent"
+          android:layout_height="@dimen/size300"
+          android:layout_below="@+id/wallet_layout"
+          android:layout_marginStart="@dimen/size40"
+          android:layout_marginEnd="@dimen/size40"
+          android:layout_marginTop="@dimen/size90"
+          android:background="@drawable/border"/>
+
+    <android.support.design.widget.TextInputLayout
+            android:id="@+id/mnemonic_layout"
+            style="@style/MainTextInputLayout"
+            android:layout_below="@+id/wallet_layout"
+            android:layout_marginTop="@dimen/size40">
+        <com.devspark.robototextview.widget.RobotoEditText
+                android:id="@+id/mnemonic"
+                style="@style/MultiInputEditText"
+                android:lines="8"
+                android:hint="@string/action_private_login_key"
+                android:translationY="@dimen/size25"
+                android:padding="@dimen/size20"
+                android:gravity="top"
+                android:inputType="textMultiLine"/>
+    </android.support.design.widget.TextInputLayout>
+
+    <com.devspark.robototextview.widget.RobotoButton
+            android:id="@+id/continue_button"
+            style="@style/MainBottomButton"
+            android:text="@string/action_continue"/>
+</RelativeLayout>

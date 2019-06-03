@@ -1,0 +1,14 @@
+package com.exawallet.model.meta;
+
+public enum SharedStage {
+    OPEN_SESSION,
+    REGISTER_PUSH_TOKEN,
+    CREATE_MULTIGIG,
+    JOIN_MULTIGIG,
+    OBTAIN_WALLET_INFO,
+    OBTAIN_MULTISIG_INFO,
+    CHANGE_PUBLIS_KEY,
+    SEND_EXTRA_MULTISIG_INFO,
+    OBTAIN_EXTRA_MULTISIG_INFO,
+    DONE
+}
